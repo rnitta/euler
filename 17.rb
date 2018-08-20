@@ -1,0 +1,33 @@
+ans = 0
+ans += 'one'.length * (9 * 10 + 100)
+ans += 'two'.length * (9 * 10 + 100)
+ans += 'three'.length * (9 * 10 + 100)
+ans += 'four'.length * (9 * 10 + 100)
+ans += 'five'.length * (9 * 10 + 100)
+ans += 'six'.length * (9 * 10 + 100)
+ans += 'seven'.length * (9 * 10 + 100)
+ans += 'eight'.length * (9 * 10 + 100)
+ans += 'nine'.length * (9 * 10 + 100)
+ans += 'ten'.length * 10
+ans += 'eleven'.length * 10
+ans += 'twelve'.length * 10
+ans += 'thirteen'.length * 10
+ans += 'fourteen'.length * 10
+ans += 'fifteen'.length * 10
+ans += 'sixteen'.length * 10
+ans += 'seventeen'.length * 10
+ans += 'eighteen'.length * 10
+ans += 'nineteen'.length * 10
+ans += 'twenty'.length * 10 * 10
+ans += 'thirty'.length * 10 * 10
+ans += 'forty'.length * 10 * 10
+ans += 'fifty'.length * 10 * 10
+ans += 'sixty'.length * 10 * 10
+ans += 'seventy'.length * 10 * 10
+ans += 'eighty'.length * 10 * 10
+ans += 'ninety'.length * 10 * 10
+ans += 'hundred'.length * 900
+ans += 'and'.length * (900 - 9)
+ans += 'onethousand'.length
+
+p ans
