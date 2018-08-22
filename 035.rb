@@ -11,9 +11,16 @@ class Integer
   end
 end
 
-ans = 0
+ans = 2 # 2と5
 (2..1000000).each do |n|
-  ans += 1 if n.circle_prime?
+  catch :not_circle_prime do
+    n_s = n.to_s
+    %w!0 2 4 5 6 8!.each do |str|
+      throw :not_circle_prime if n_s.include? str
+    end
+    next unless n.prime?
+    ans += 1 if n.circle_prime?
+  end
 end
 p ans
 # to_sしたりarrayでメモリ食いすぎかも
